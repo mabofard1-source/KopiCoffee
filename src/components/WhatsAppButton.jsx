@@ -1,0 +1,2 @@
+import { FaWhatsapp } from 'react-icons/fa6';
+export default function WhatsAppButton({ cart, total, label = 'Order via WhatsApp' }) { const message = `Hello Kopi Cafe,\n\nI would like to order:\n\n${cart.map(x => `- ${x.name} x ${x.qty} = ${x.price * x.qty} L.E`).join('\n')}\n\nTotal: ${total} L.E\n\nPlease confirm my order.`; return <a className="whatsapp" target="_blank" rel="noreferrer" href={`https://wa.me/201036202620?text=${encodeURIComponent(message)}`}><FaWhatsapp /> {label}</a>; }

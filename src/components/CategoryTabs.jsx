@@ -1,0 +1,1 @@
+export default function CategoryTabs({ categories, active, onChange }) { return <div className="tabs">{['All', ...categories].map(c => <button key={c} onClick={() => onChange(c)} className={active === c ? 'active' : ''}>{c}</button>)}</div>; }

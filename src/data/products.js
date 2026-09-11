@@ -1,0 +1,27 @@
+const images = {
+  'Signature Hot':'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85', Coffee:'https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=900&q=85', 'Hot Chocolate':'https://images.unsplash.com/photo-1542990253-a781e04c0082?auto=format&fit=crop&w=900&q=85', 'Ice Signature':'https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=900&q=85', 'Ice Tea':'https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=900&q=85', 'Hot Drinks':'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=900&q=85', 'Boba Tea':'https://images.unsplash.com/photo-1525385133512-2f3bdd039054?auto=format&fit=crop&w=900&q=85', 'Matcha Cloud':'https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=900&q=85', 'Mojito & Soda':'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=900&q=85', 'Fresh & Cocktail':'https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=900&q=85', Shake:'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=900&q=85', Frappe:'https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?auto=format&fit=crop&w=900&q=85', Sandwiches:'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85', Salads:'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=85', Extra:'https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=85', 'Filter Brewing':'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85', Dessert:'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85', Croissant:'https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=85', Waffle:'https://images.unsplash.com/photo-1562376552-0d160a2f35c0?auto=format&fit=crop&w=900&q=85', Pancake:'https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=900&q=85'
+};
+const menu = {
+  'Signature Hot': [['Salted Caramel',90],['Spanish Latte',95],['Caramel Macchiato',90],['Coconut Spice Latte',90],['Dark Mocha',90],['White Mocha',90],['Hot Mexican Mocha',95],['Banana Bread Latte',90]],
+  Coffee: [['Espresso',50],['Espresso Cream',60],['Flat White',70],['Cortado',65],['White Americano',70],['Americano',60],['Espresso Afocato',60],['Latte',80],['Cappuccino',75],['Turkish Coffee Single',35],['Turkish Coffee Double',50]],
+  'Hot Chocolate': [['Hot Chocolate Dark',70],['Hot Chocolate White',70],['Strawberry White',75],['Hot Cream Brulee',80],['Hot Chocolate Marshmallow',80]],
+  'Ice Signature': [['Ice Fruit Americano',85],['Ice Mocha Dark',85],['Ice Mocha White',85],['Ice Caramel Macchiato',85],['Ice Spanish Latte',90],['Ice Coconut Latte',90],['Salt Butter Scotch Latte',85]],
+  'Ice Tea': [['Peach Tea',60],['Lemon Mint Tea',60],['Passion Tea',60],['Pina Colada',60],['Pink Lemon Cloud',80],['Pink Choco Cloud',85]],
+  'Hot Drinks': [['Tea',30],['Flavored Tea',40],['Herb',40]],
+  'Boba Tea': [['Classic Boba',70],['Boba Latte',80],['Mango Peach Boba',75]],
+  'Matcha Cloud': [['Classic Matcha',70],['Strawberry Matcha',90],['Orange Honey Matcha',80],['Coconut Spice Matcha',90]],
+  'Mojito & Soda': [['Passion Fruit',80],['Cherry Lemon',80],['Ocean Pineapple Cloud',75],['Red Bull',95],['Soda',50],['Water',15]],
+  'Fresh & Cocktail': [['Mango Juice',75],['Orange Juice',75],['Strawberry Juice',70],['Velvet Blend',80],['Citrus Mix',70],['Guava',70]],
+  Shake: [['Shake Oreo',85],['Shake Salted Caramel',80],['Shake Nutella',80],['Shake Strawberry',85],['Shake Pistachio',80]],
+  Frappe: [['Frappe Classic',65],['Frappe Nutella',75],['Frappe Salted Caramel',70],['Frappe Kinder',70]],
+  Sandwiches: [['Mediterranean',115],['Turkey Sandwich',90],['Four Cheese Melt',110],['Salami Sandwich',105],['Melt Chicken Sandwich',125]],
+  Salads: [['Greek Salad',90],['Green Salad',80],['Caesar Salad',125]],
+  Extra: [['Boba',32],['Milk',30],['Espresso',35],['Sauce',35],['Whipped Cream',30]],
+  'Filter Brewing': [['V60',105],['Aeropress',105]],
+  Dessert: [['Cheese Cake Nutella',125],['Cheese Cake Blueberry',120],['Cheese Cake Pistachio',120],['Cheese Cake Lotus',120],['San Sebastian Nutella',125],['San Sebastian Lotus',120],['San Sebastian Pistachio',120],['Chocolate Fudge Cake',110],['English Cake',70],['Honey Cake',105],['Tiramisu',110],['Molten Chocolate',110],['Cookie Salted',70],['Cookie Nutella',75],['Brownies',70],['Cinnamon Nutella',110],['Cinnamon Pistachio',115],['Cinnamon Lotus',105],['Cinnamon Classic',100]],
+  Croissant: [['Plain Croissant',60],['Chocolate Croissant',75],['Cheese Croissant',75],['Turkey Croissant',85]],
+  Waffle: [['Waffle Nutella',70],['Waffle Pistachio',70],['Waffle Blueberry',75],['Waffle Lotus',75],['Waffle Fruits',75]],
+  Pancake: [['Pancake Nutella',70],['Pancake Pistachio',70],['Pancake Blueberry',75],['Pancake Lotus',75]]
+};
+export const categories = Object.keys(menu);
+export const products = Object.entries(menu).flatMap(([category, entries]) => entries.map(([name, price], i) => ({ id: `${category}-${name}`.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/-$/,''), name, price, category, image: images[category], description: `A carefully crafted ${name.toLowerCase()} made fresh with the warm, thoughtful touch of Kopi Specialty Coffee.`, featured: i < 2 })));

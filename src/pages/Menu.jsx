@@ -1,0 +1,6 @@
+import { useMemo, useState } from 'react';
+import { FiSearch } from 'react-icons/fi';
+import CategoryTabs from '../components/CategoryTabs';
+import ProductCard from '../components/ProductCard';
+import { categories, products } from '../data/products';
+export default function Menu() { const [active, setActive] = useState('All'); const [query, setQuery] = useState(''); const list = useMemo(() => products.filter(p => (active === 'All' || p.category === active) && p.name.toLowerCase().includes(query.toLowerCase())), [active, query]); return <section className="menu-page container"><div className="page-title"><p className="eyebrow">Take a little look</p><h1>Our <i>menu</i></h1><p>Something sweet, something strong, something just for you.</p></div><div className="search"><FiSearch /><input value={query} onChange={e => setQuery(e.target.value)} placeholder="Search for a favorite..." /></div><CategoryTabs categories={categories} active={active} onChange={setActive} /><p className="result-count">{list.length} lovely things to choose from</p><div className="product-grid">{list.map(p => <ProductCard key={p.id} product={p} />)}</div>{!list.length && <div className="empty">No treats found. Try another search.</div>}</section>; }
